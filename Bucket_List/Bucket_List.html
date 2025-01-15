@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bucket List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        main {
+            flex: 1;
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        ul li::before {
+            content: "\2605"; /* Star icon */
+            color: #FFD700;
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header {
+                padding: 0.8rem;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            ul li {
+                font-size: 1rem;
+            }
+
+            ul li::before {
+                font-size: 1.2rem;
+            }
+
+            footer {
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            ul li {
+                font-size: 0.9rem;
+            }
+
+            ul li::before {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Bucket List</h1>
+    </header>
+    <main>
+        <h2>Things I Want to Achieve</h2>
+        <ul>
+            <li>Travel to Japan</li>
+            <li>Learn a new musical instrument</li>
+            <li>Run a marathon</li>
+            <li>Write and publish a book</li>
+            <li>Experience the Northern Lights</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Bucket List</p>
+    </footer>
+</body>
+</html>

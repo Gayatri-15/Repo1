@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.magazine-cover {
+    position: relative;
+    width: 800px;
+    height: 1200px;
+    margin: 20px auto;
+    color: #fff;
+    overflow: hidden;
+    border: 5px solid #333;
+    background-color: #222;
+}
+
+.featured-image {
+    position: relative;
+}
+
+.featured-image img {
+    width: 100%;
+    height: auto;
+}
+
+.main-title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.headline {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.caption {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-size: 20px;
+    color: #fff;
+}
+
+.decorative-line {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    height: 2px;
+    background-color: #ffcc00;
+}
+
+.subheadline {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.content-list {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    list-style: none;
+    font-size: 18px;
+}
+
+.content-list li {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .magazine-cover {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-title {
+        font-size: 32px;
+    }
+
+    .headline {
+        font-size: 24px;
+    }
+
+    .caption {
+        font-size: 16px;
+    }
+
+    .subheadline {
+        font-size: 20px;
+    }
+
+    .content-list li {
+        font-size: 16px;
+    }
+}
